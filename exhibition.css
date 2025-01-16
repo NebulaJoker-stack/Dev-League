@@ -1,0 +1,103 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+#exhibitions {
+    background-color: white;
+}
+
+#exhibitions .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+#exhibitions .text-center {
+    text-align: center;
+}
+
+#exhibitions .bg-yellow-500 {
+    background-color: #fbbf24;
+}
+
+#exhibitions .bg-yellow-600:hover {
+    background-color: #f59e0b;
+}
+
+#exhibitions img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#exhibitions .mb-8 {
+    margin-bottom: 2rem;
+}
+
+
+#buy-tickets {
+    background-color: #f9fafb;
+}
+
+#buy-tickets .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+#buy-tickets .max-w-md {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#buy-tickets form {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#buy-tickets input,
+#buy-tickets select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+#buy-tickets button {
+    background-color: #fbbf24;
+    border: none;
+    color: white;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#buy-tickets button:hover {
+    background-color: #f59e0b;
+}
+
+@media (max-width: 768px) {
+    #exhibitions .flex {
+        flex-direction: column;
+    }
+
+    #exhibitions .w-full {
+        width: 100%;
+    }
+
+    #buy-tickets form {
+        padding: 1.5rem;
+    }
+}
