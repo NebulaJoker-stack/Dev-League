@@ -1,0 +1,134 @@
+.bg-gray-900 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-image: url('PS1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#bs {
+  height: 48px;
+}
+
+.bb {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+h1 {
+    font-size: 15px;
+}
+
+
+
+.buttons {
+    top: 20px; 
+    right: 20px; 
+    position: absolute;
+}
+
+.museum-btn {
+    margin-right: 20px !important;
+}
+
+.museum-en {
+    margin-left: 10px !important; 
+}
+
+.museum-btn,
+.museum-hh,
+.museum-en {
+    background: linear-gradient(90deg, #d4af37, #897340);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition:  0.3s ease,  0.3s ease;
+    margin: 10px 0;
+   
+}
+
+.museum-btn:hover,
+.museum-hh:hover,
+.museum-en:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (min-width: 640px) {
+    .museum-btn,
+    .museum-hh {
+        width: auto;
+    }
+}
+
+.ubuntu-light {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
