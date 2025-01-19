@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - Museum</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-ubuntu">
+
+    <!-- Header Section -->
+    <header class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">Museum Events</h1>
+            <nav>
+                <a href="index.html" class="header-link">Home</a>
+                <a href="histori.html" class="header-link">Our History</a>
+                <a href="exhibition.html" class="header-link">Exhibitions</a>
+                <a href="shqip.html" class="header-link">AL</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Event Details Section -->
+    <section id="event-details" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Event Image -->
+                <img src="mus.jpeg" alt="Ancient Artifacts" class="w-full rounded-lg shadow-md">
+                <!-- Event Description -->
+                <div>
+                    <h2 class="text-4xl font-bold mb-4 text-gray-900">Ancient Artifacts Showcase</h2>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Step back in time and discover the rich archaeological history of Kosovo. This special showcase 
+                        features rare artifacts, some of which are being displayed for the first time. Learn about the 
+                        fascinating stories behind these treasures from our expert curators.
+                    </p>
+                    <p class="text-gray-700 text-lg mb-4">
+                        <strong>Date:</strong> March 25, 2025<br>
+                        <strong>Location:</strong> National Museum of Kosovo, Pristina
+                    </p>
+                    <a href="#reserve" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg text-lg">
+                        Reserve Your Spot
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Events Section -->
+    <section id="related-events" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">Related Events</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <img src="ort.webp" alt="Modern Art Showcase" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Modern Art Showcase</h3>
+                    <p class="text-gray-600 mb-4">Experience contemporary art from Kosovo's leading artists.</p>
+                    <p class="text-sm text-gray-500 mb-4">Date: April 15, 2025</p>
+                    <a href="event.html" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg inline-block">
+                        View Details
+                    </a>
+                </div>
+                <!-- Event 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <img src="night.avif" alt="Cultural Night" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Cultural Night</h3>
+                    <p class="text-gray-600 mb-4">Celebrate Kosovo's vibrant culture through music and dance.</p>
+                    <p class="text-sm text-gray-500 mb-4">Date: May 10, 2025</p>
+                    <a href="event.html" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg inline-block">
+                        View Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 National Museum of Kosovo. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
