@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserve Your Spot</title>
+  <link rel="stylesheet" href="reserve.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-ubuntu">
+
+      <header class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">National Museum of Kosovo</h1>
+            <nav class="flex space-x-4">
+                <a href="index.html" class="hover:text-yellow-500">Home</a>
+                <a href="histori.html" class="hover:text-yellow-500">Our History</a>
+                <a href="shqip.html" class="hover:text-yellow-500">AL</a>
+                <a href="lajme.html" class="hover:text-yellow-500">News And Articles</a>
+            </nav>
+        </div>
+    </header>
+
+  <section id="reservation-form" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-lg mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Reserve Your Spot</h2>
+        <form action="#" method="POST">
+          
+          <!-- Name Input -->
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700">Full Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg mt-2" required>
+          </div>
+          
+          <!-- Email Input -->
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700">Email Address</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg mt-2" required>
+          </div>
+          
+          <!-- Event Selection (Dropdown) -->
+          <div class="mb-4">
+            <label for="event" class="block text-gray-700">Select Event</label>
+            <select id="event" name="event" class="w-full px-4 py-2 border rounded-lg mt-2" required>
+              <option value="Modern Art Showcase">Modern Art Showcase</option>
+              <option value="Cultural Night">Cultural Night</option>
+              <option value="Ancient Artifacts">Ancient Artifacts</option>
+            </select>
+          </div>
+          
+          <!-- Ticket Options (Radio Buttons) -->
+          <div class="mb-4">
+            <label for="ticket-option" class="block text-gray-700">Choose Your Ticket Type</label>
+            <div class="flex items-center mt-2">
+              <input type="radio" id="standard" name="ticket-option" value="Standard" class="mr-2">
+              <label for="standard" class="mr-4">Standard Ticket - $10</label>
+
+              <input type="radio" id="premium" name="ticket-option" value="Premium" class="mr-2">
+              <label for="premium" class="mr-4">Premium Ticket - $20</label>
+
+              <input type="radio" id="vip" name="ticket-option" value="VIP" class="mr-2">
+              <label for="vip" class="mr-4">VIP Ticket - $50</label>
+            </div>
+          </div>
+          
+          <!-- Number of Tickets -->
+          <div class="mb-4">
+            <label for="tickets" class="block text-gray-700">Number of Tickets</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" class="w-full px-4 py-2 border rounded-lg mt-2" required>
+          </div>
+          
+          <!-- Submit Button -->
+          <button type="submit" class="w-full py-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600">
+            Submit Reservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 National Museum of Kosovo. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
