@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - National Museum of Kosovo</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-ubuntu">
+
+    <header class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">National Museum of Kosovo</h1>
+            <nav>
+                <a href="index.html" class="header-link">Home</a>
+                <a href="histori.html" class="header-link">Our History</a>
+                <a href="exhibition.html" class="header-link">Exhibitions</a>
+                <a href="contact.html" class="header-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact-section" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-4xl font-bold text-gray-900">Get in Touch</h2>
+                <p class="text-gray-700 text-lg mt-4">We'd love to hear from you. Please fill out the form or contact us through the details below.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Contact Us</h3>
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg mt-2" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg mt-2" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700">Your Message</label>
+                            <textarea id="message" name="message" class="w-full px-4 py-2 border rounded-lg mt-2" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+               
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Contact Details</h3>
+                    <p class="text-gray-700 mb-4"><strong>Phone:</strong> +383 45 123 456</p>
+                    <p class="text-gray-700 mb-4"><strong>Email:</strong> info@nmokosovo.org</p>
+                    <p class="text-gray-700 mb-4"><strong>Address:</strong> National Museum of Kosovo, Pristina, Kosovo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 National Museum of Kosovo. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
