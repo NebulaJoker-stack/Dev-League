@@ -4,34 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events and Exhibitions - Museum</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lajme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-ubuntu">
-    
-    <!-- Navigation Buttons -->
-  
-<header>
-    <nav class="buttons fixed top-5 right-5 z-10">
-        <a href="exhibition.html" title="Go to Museum Exhibit page">
-            <button class="museum-btn">Museum Exhibit</button>
-        </a>
-        <a href="histori.html" title="Read about our history">
-            <button class="museum-hh">Our History</button>
-        </a>
-        <a href="shqip.html" title="Switch to Albanian language">
-            <button class="museum-en">AL</button>
-        </a>
-        <a href="index.html" title="Return to homepage">
-            <button class="museum-nk">Home</button>
-        </a>
-    </nav>
-</header>
+ 
+    <header class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">National Museum of Kosovo</h1>
+            <nav class="flex space-x-4">
+                <a href="index.html" class="hover:text-yellow-500">Home</a>
+                <a href="exhibition.html" class="hover:text-yellow-500">Exhibitions</a>
+                <a href="shqip.html" class="hover:text-yellow-500">AL</a>
+                <a href="histori.html" class="hover:text-yellow-500">Our History</a>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Featured Event -->
+   
     <section id="featured-event" class="py-16 bg-gray-800 text-white text-center">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold mb-4">Upcoming Event: Ancient Artifacts Showcase</h2>
@@ -39,93 +32,73 @@
                 Discover rare and historical artifacts from Kosovo's ancient history on <strong>March 25, 2025</strong>.
                 Reserve your spot today to experience the past come alive!
             </p>
-            <a href="#reserve" title="Reserve your spot for the Ancient Artifacts Showcase" 
-               class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg text-lg">
+            <a href="#reserve" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg text-lg">
                 Reserve Your Spot
             </a>
         </div>
     </section>
 
-    <!-- Events and Exhibitions -->
+  
     <section id="events" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8" style="color: black;">Our Events & Exhibitions</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Event 1 -->
+               
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <img src="mus.jpeg" alt="Ancient Artifacts event" class="w-full h-48 object-cover rounded mb-4">
-                    <h3 class="text-xl font-bold mb-2">Ancient Artifacts</h3>
+                    <img src="mus.jpeg" alt="Event 1" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2" >Ancient Artifacts</h3>
                     <p class="text-gray-600 mb-4">Explore Kosovo's rich archaeological heritage.</p>
                     <p class="text-sm text-gray-500 mb-4">Date: March 25, 2025</p>
-                    <a href="ancient.html" title="View details about Ancient Artifacts" 
-                       class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg inline-block">
+                    <a href="#details" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg inline-block">
                         View Details
                     </a>
                 </div>
-
-                <!-- Event 2 -->
+               
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <img src="ort.webp" alt="Modern Art Showcase event" class="w-full h-48 object-cover rounded mb-4">
+                    <img src="ort.webp" alt="Event 2" class="w-full h-48 object-cover rounded mb-4">
                     <h3 class="text-xl font-bold mb-2">Modern Art Showcase</h3>
                     <p class="text-gray-600 mb-4">Experience contemporary art from Kosovo's leading artists.</p>
                     <p class="text-sm text-gray-500 mb-4">Date: April 15, 2025</p>
-                    <a href="modern-art-showcase.html" title="View details about Modern Art Showcase" 
-                       class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg inline-block">
+                    <a href="#details" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg inline-block">
                         View Details
                     </a>
                 </div>
-
-                <!-- Event 3 -->
+              
                 <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <img src="night.avif" alt="Cultural Night event" class="w-full h-48 object-cover rounded mb-4">
+                    <img src="night.avif" alt="Event 3" class="w-full h-48 object-cover rounded mb-4">
                     <h3 class="text-xl font-bold mb-2">Cultural Night</h3>
                     <p class="text-gray-600 mb-4">Celebrate Kosovo's vibrant culture through music and dance.</p>
                     <p class="text-sm text-gray-500 mb-4">Date: May 10, 2025</p>
-                    <a href="cultural-night.html" title="View details about Cultural Night" 
-                       class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg inline-block">
+                    <a href="#details" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg inline-block">
                         View Details
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Event Calendar -->
+   
     <section id="event-calendar" class="py-16 bg-gray-200">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">Event Calendar</h2>
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                    <!-- Calendar Entry 1 -->
                     <div class="event-date border p-4 rounded text-center">
                         <h4 class="text-lg font-bold">March 25</h4>
                         <p class="text-sm text-gray-600">Ancient Artifacts Showcase</p>
-                        <a href="ancient.html   " 
-                           title="View details about Ancient Artifacts" class="text-blue-500 text-sm">View Details</a>
+                        <a href="#details" class="text-blue-500 text-sm">View Details</a>
                     </div>
-
-                    <!-- Calendar Entry 2 -->
                     <div class="event-date border p-4 rounded text-center">
                         <h4 class="text-lg font-bold">April 15</h4>
                         <p class="text-sm text-gray-600">Modern Art Showcase</p>
-                        <a href="modern-art-showcase.html" 
-                           title="View details about Modern Art Showcase" class="text-blue-500 text-sm">View Details</a>
+                        <a href="#details" class="text-blue-500 text-sm">View Details</a>
                     </div>
-
-                    <!-- Calendar Entry 3 -->
                     <div class="event-date border p-4 rounded text-center">
                         <h4 class="text-lg font-bold">May 10</h4>
                         <p class="text-sm text-gray-600">Cultural Night</p>
-                        <a href="cultural-night.html" 
-                           title="View details about Cultural Night" class="text-blue-500 text-sm">View Details</a>
+                        <a href="#details" class="text-blue-500 text-sm">View Details</a>
                     </div>
-
                 </div>
             </div>
         </div>
-    </section>
-</body>
-</html>
+    </section>  

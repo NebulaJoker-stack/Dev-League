@@ -1,35 +1,22 @@
-/* General Styles */
 body {
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333333;
-    background-color: #f7fafc;
 }
 
 h1, h2, h3 {
     color: #ff6767;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-/* Navigation Buttons */
-/* Position and styling for the navigation buttons */
 .buttons {
+    top: 20px;
+    right: 20px;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 1rem;
+    flex-direction: column; 
 }
 
 
@@ -65,141 +52,79 @@ a {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-    .buttons {
-        position: static;
-        text-align: center;
-        margin-top: 1rem;
-    }
-
-    .museum-btn,
-    .museum-hh,
-    .museum-en,
-    .museum-nk {
-        width: 100%; /* Make buttons full width on smaller screens */
-    }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
-/* Featured Event Section */
-#featured-event {
-    text-align: center;
-    padding: 4rem 1rem;
-    background: #1a202c; /* Tailwind's bg-gray-800 */
-    color: white;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-#featured-event a {
-    display: inline-block;
+.bg-yellow-500 {
     background-color: #fbbf24;
-    padding: 12px 24px;
-    color: white;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
 }
 
-#featured-event a:hover {
+.bg-yellow-500:hover {
     background-color: #f59e0b;
 }
 
-/* Events & Exhibitions Section */
-#events {
-    padding: 4rem 1rem;
-    background-color: white;
+.bg-gray-100 {
+    background-color: #f7fafc;
 }
 
-#events h2 {
-    text-align: center;
-    color: black;
-    margin-bottom: 2rem;
-}
-
-#events .grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-@media (min-width: 640px) {
-    #events .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    #events .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-#events .shadow-md {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#events img {
-    width: 100%;
-    height: 12rem;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-#events a {
-    display: inline-block;
-    background-color: #fbbf24;
-    padding: 12px 24px;
-    color: white;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-#events a:hover {
-    background-color: #f59e0b;
-}
-
-/* Event Calendar Section */
-#event-calendar {
-    padding: 4rem 1rem;
+.bg-gray-200 {
     background-color: #edf2f7;
 }
 
-#event-calendar h2 {
+.bg-gray-900 {
+    background-color: #1a202c;
+}
+
+.text-yellow-500 {
+    color: #fbbf24;
+}
+
+.text-gray-700 {
+    color: #4a5568;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.text-center {
     text-align: center;
-    color: black;
-    margin-bottom: 2rem;
-}
-
-#event-calendar .event-date {
-    text-align: center;
-    border: 1px solid #e2e8f0;
-    padding: 1rem;
-    border-radius: 8px;
-    background-color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#event-calendar .event-date:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-#event-calendar a {
-    color: #3182ce; /* Tailwind's text-blue-500 */
-    font-size: 0.875rem; /* text-sm */
-    transition: color 0.3s ease;
-}
-
-#event-calendar a:hover {
-    color: #2b6cb0; /* Tailwind's text-blue-600 */
-}
-
-/* Responsive Utilities */
-@media (max-width: 768px) {
-    .buttons {
-        position: static;
-        text-align: center;
-        margin-top: 1rem;
-    }
 }
