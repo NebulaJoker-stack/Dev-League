@@ -1,129 +1,64 @@
 body {
     font-family: 'Ubuntu', sans-serif;
-    line-height: 1.6;
+    background-color: #f7f9fc;
     margin: 0;
     padding: 0;
-    flex-direction: column;
 }
 
-
- h2, h3 {
+h2, h3 {
     color: #000000;
 }
-h1 {
-    color: white;
-}
 
-.hero {
-    background-image: url('path_to_image.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-a {
+header a {
+    font-size: 16px;
     text-decoration: none;
-    color: inherit;
-}
-
-footer {
-    background: #222;
-    color: #bbb;
-}
-
-
-.buttons {
-    top: 20px;
-    right: 20px;
-    position: absolute;
-    display: flex;
-    flex-direction: column; 
-}
-
-
-.museum-btn {
-    background: linear-gradient(90deg, red #532121);
     color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    padding: 12px 30px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin: 10px 0;
-}
-.museum-hh,
-.museum-en {
-    background: linear-gradient(90deg, #d4af37, #897340);
-    color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    padding: 12px 30px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin: 10px 0;
+    transition: color 0.3s ease-in-out;
 }
 
-.museum-btn:hover,
-.museum-hh:hover,
-.museum-en:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+header a:hover {
+    color: #fbbf24;
 }
 
-
-.bg-gray-100 {
+.contact-section {
     background-color: #f7fafc;
 }
 
-.bg-gray-100 p {
-    color: #4a5568;
+.contact-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.text-yellow-500 {
-    background-color: #fbbf24;
+form input, form textarea {
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
 }
 
-.text-yellow-500:hover {
-    background-color: #f59e0b;
-}
-
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input, select {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    font-size: 16px;
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #ecc94b;
+    background: #fff;
 }
 
 button[type="submit"] {
     background-color: #fbbf24;
-    color: white;
-    padding: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 16px;
 }
 
 button[type="submit"]:hover {
     background-color: #f59e0b;
+}
+
+.contact-section .bg-gray-900 a:hover {
+    color: #fbbf24;
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 14px;
+    color: #bbb;
 }

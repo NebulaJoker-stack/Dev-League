@@ -17,11 +17,12 @@
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-3xl font-bold">National Museum of Kosovo</h1>
             <nav class="flex space-x-4">
-                <a href="index.html" class="hover:text-yellow-500">Home</a>
-                <a href="histori.html" class="hover:text-yellow-500">Our History</a>
-                <a href="shqip2.html" class="hover:text-yellow-500">AL</a>
-                <a href="lajme.html" class="hover:text-yellow-500">News And Articles</a>
-                <a href="kontakt.html" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded transition" style="margin-top: -6px;">Contact Us</a>
+                <a href="shqip.html" class="hover:text-yellow-500">Home</a>
+                <a href="shqip3.html" class="hover:text-yellow-500">Historia Jon</a>
+                <a href="exhibition.html" class="hover:text-yellow-500">EN</a>
+                <a href="shqip4.html" class="hover:text-yellow-500">Lajme Dhe Artikuj</a>
+                <a href="kontakt.html" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded transition" style="margin-top: -7px;">Na Kontaktoni</a>
+
             </nav>
         </div>
     </header>
@@ -29,18 +30,21 @@
  
     <section id="exhibitions" class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-semibold text-center text-gray-800 mb-8">Explore Our Exhibits</h2>
+            <h2 class="text-4xl font-semibold text-center text-gray-800 mb-8">
+                Eksploroni ekspozitat tona</h2>
             <p class="text-center text-gray-600 mb-12">
-                Journey through our curated collections highlighting Kosovo's rich cultural heritage and vibrant artistic scene.
+                Udhëtoni nëpër koleksionet tona të kuruara që nxjerrin në pah trashëgiminë e pasur kulturore dhe skenën e gjallë artistike të Kosovës.
+
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
              
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition">
                     <img src="arch.jpg" alt="Archaeology Exhibit" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2">Archaeology</h3>
-                        <p class="text-gray-600">Uncover artifacts that tell the story of Kosovo's ancient past.</p>
-                        <a href="#buy-tickets" class="inline-block mt-4 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Buy Tickets</a>
+                        <h3 class="text-2xl font-semibold mb-2">Aekeologhji</h3>
+                        <p class="text-gray-600">tZbuloni artefakte që tregojnë historinë e lashtë të Kosovës.
+                    </p>
+                        <a href="#buy-tickets" class="inline-block mt-4 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Blej Bileta</a>
                     </div>
                 </div>
 
@@ -48,9 +52,9 @@
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition">
                     <img src="car.jpg" alt="Ethnography Exhibit" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2">Ethnography</h3>
-                        <p class="text-gray-600">Immerse yourself in the traditions of Albanian culture.</p>
-                        <a href="#buy-tickets" class="inline-block mt-4 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Buy Tickets</a>
+                        <h3 class="text-2xl font-semibold mb-2">Etnologji</h3>
+                        <p class="text-gray-600">Zhytuni në traditat e kulturës shqiptare.</p>
+                        <a href="#buy-tickets" class="inline-block mt-4 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Blej Bileta</a>
                     </div>
                 </div>
 
@@ -59,7 +63,8 @@
                     <img src="art.jpg" alt="Modern Art Exhibit" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-semibold mb-2">Modern Art</h3>
-                        <p class="text-gray-600">Experience Kosovo's contemporary artistic masterpieces.</p>
+                        <p class="text-gray-600">
+                        Përjetoni kryeveprat artistike bashkëkohore të Kosovës.</p>
                         <a href="#buy-tickets" class="inline-block mt-4 px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Buy Tickets</a>
                     </div>
                 </div>
@@ -70,27 +75,27 @@
    
     <section id="buy-tickets" class="py-16 bg-gray-200">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-semibold text-center text-gray-800 mb-8">Reserve Your Tickets</h2>
+            <h2 class="text-4xl font-semibold text-center text-gray-800 mb-8">Reservo Bileta</h2>
             <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
                 <form action="submit_ticket_form.php" method="POST">
                     <div class="mb-4">
-                        <label for="ticket-type" class="block mb-2 text-lg font-medium">Ticket Type</label>
+                        <label for="ticket-type" class="block mb-2 text-lg font-medium">Lloji i tiketes</label>
                         <select id="ticket-type" name="ticket-type" class="w-full p-3 border border-gray-300 rounded">
-                            <option value="adult">Adult - $15</option>
+                            <option value="adult">Adoleshent - $15</option>
                             <option value="student">Student - $10</option>
                             <option value="senior">Senior - $8</option>
-                            <option value="family">Family - $40</option>
+                            <option value="family">Familjare - $40</option>
                         </select>
                     </div>
                     <div class="mb-4">
-                        <label for="ticket-quantity" class="block mb-2 text-lg font-medium">Quantity</label>
+                        <label for="ticket-quantity" class="block mb-2 text-lg font-medium">Sasia</label>
                         <input type="number" id="ticket-quantity" name="quantity" class="w-full p-3 border border-gray-300 rounded" min="1" max="10" value="1">
                     </div>
                     <div class="mb-4">
-                        <label for="visit-date" class="block mb-2 text-lg font-medium">Visit Date</label>
+                        <label for="visit-date" class="block mb-2 text-lg font-medium">Data e Vizites</label>
                         <input type="datetime-local" id="visit-date" name="visit-date" class="w-full p-3 border border-gray-300 rounded">
                     </div>
-                    <button type="submit" class="w-full py-3 bg-yellow-500 text-white rounded hover:bg-yellow-600"> <a href="thanks.html">Complete Purchase </a></button>
+                    <button type="submit" class="w-full py-3 bg-yellow-500 text-white rounded hover:bg-yellow-600"> <a href="thanks.html">Blerja e plotë </a></button>
                 </form>
             </div>
         </div>

@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #2d3748;
+}
+
+
+.thank-you-container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+
+.thank-you-message {
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.thank-you-message h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+.thank-you-message p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #4a5568;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.home-button,
+.explore-button,
+.history-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.home-button {
+    background: linear-gradient(90deg, #d4af37, #897340);
+    color: white;
+}
+
+.home-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+}
+
+
+.explore-button {
+    background: linear-gradient(90deg, #3182ce, #63b3ed);
+    color: white;
+}
+
+.explore-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(49, 130, 206, 0.4);
+}
+
+
+.history-button {
+    background: linear-gradient(90deg, #38a169, #68d391);
+    color: white;
+}
+
+.history-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(56, 161, 105, 0.4);
+}
+
+
+.additional-info {
+    margin-top: 20px;
+    color: #4a5568;
+}
+
+.additional-info h2 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.additional-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+
+.thank-you-footer {
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.thank-you-footer a {
+    color: #3182ce;
+    text-decoration: none;
+}
+
+.thank-you-footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .thank-you-message {
+        padding: 30px 20px;
+    }
+
+    .thank-you-message h1 {
+        font-size: 2.2rem;
+    }
+
+    .thank-you-message p {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons a {
+        width: 100%;
+    }
+}

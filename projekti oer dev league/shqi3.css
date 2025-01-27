@@ -1,0 +1,129 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+
+ h2, h3 {
+    color: #000000;
+}
+h1 {
+    color: white;
+}
+
+.hero {
+    background-image: url('path_to_image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    background: #222;
+    color: #bbb;
+}
+
+
+.buttons {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.museum-btn {
+    background: linear-gradient(90deg, red #532121);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 10px 0;
+}
+.museum-hh,
+.museum-en {
+    background: linear-gradient(90deg, #d4af37, #897340);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 10px 0;
+}
+
+.museum-btn:hover,
+.museum-hh:hover,
+.museum-en:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.bg-gray-100 {
+    background-color: #f7fafc;
+}
+
+.bg-gray-100 p {
+    color: #4a5568;
+}
+
+.text-yellow-500 {
+    background-color: #fbbf24;
+}
+
+.text-yellow-500:hover {
+    background-color: #f59e0b;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #fbbf24;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f59e0b;
+}

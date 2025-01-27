@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +47,7 @@ h1 span {
   opacity: 0;
 }
 
-/* Buttons */
+
 .buttons {
   top: 20px;
   right: 20px;
@@ -57,7 +57,8 @@ h1 span {
 .museum-btn,
 .museum-hh,
 .museum-en,
-.museum-nk {
+.museum-nk,
+.museum-jg { 
   background: linear-gradient(90deg, #d4af37, #897340);
   color: white;
   font-family: 'Playfair Display', serif;
@@ -70,16 +71,22 @@ h1 span {
   margin: 10px 0;
 }
 
-.museum-btn:hover, 
+.museum-btn:hover,
 .museum-hh:hover,
 .museum-en:hover,
-.museum-nk:hover {
+.museum-nk:hover,
+.museum-jg:hover { 
   transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+
 .museum-btn {
   margin-right: 20px;
+}
+
+.museum-jg {
+  margin-left: 10px;
 }
 
 .museum-en, 

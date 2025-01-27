@@ -1,0 +1,104 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+}
+
+
+.buttons {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+}
+
+.museum-btn, .museum-hh, .museum-en, .museum-nk {
+    background: linear-gradient( #6a67ce, #8e8dff);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.museum-btn:hover, .museum-hh:hover, .museum-en:hover, .museum-nk:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.bg-hero {
+    background-image: url('museum-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    z-index: 10;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.featured-artifact {
+    text-align: center;
+    background-color: #f9fafb;
+    padding: 4px ;
+}
+
+.featured-artifact h2 {
+    color: #333;
+}
+
+.artifact-img {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.artifact-img:hover {
+    transform: scale(1.05);
+}
+
+.explore-btn {
+    background: linear-gradient(90deg, #ffa726, #ff9800);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+    background: linear-gradient(90deg, #fb8c00, #f57c00);
+}
+
+
+@media (max-width: 768px) {
+    .bg-hero {
+        height: 50vh;
+    }
+
+    .artifact-img {
+        width: 80%;
+    }
+}
